@@ -26,7 +26,7 @@ gulp.task('jquery-plugins', () => {
     .src([
       'node_modules/swagger-ui/lib/jquery.slideto.min.js',
       'node_modules/swagger-ui/lib/jquery.wiggle.min.js',
-      'node_modules/swagger-ui/lib/jsoneditor.min.js'
+      'node_modules/swagger-ui/lib/jsoneditor.js'
     ])
     .pipe(concat('jquery.plugins.js'))
     .pipe(gulp.dest('./dist'))
