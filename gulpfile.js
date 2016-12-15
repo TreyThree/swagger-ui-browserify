@@ -26,8 +26,7 @@ gulp.task('jquery-plugins', () => {
     .src([
       'node_modules/swagger-ui/lib/jquery.slideto.min.js',
       'node_modules/swagger-ui/lib/jquery.wiggle.min.js',
-      'node_modules/swagger-ui/lib/jsoneditor.js',
-      'node_modules/swagger-ui/lib/highlight.7.3.pack.js'
+      'node_modules/swagger-ui/lib/jsoneditor.js'
     ])
     .pipe(concat('jquery.plugins.js'))
     .pipe(gulp.dest('./dist'))
@@ -38,7 +37,8 @@ gulp.task('wrap-files', () => {
   return gulp.src([
     'node_modules/swagger-ui/src/main/javascript/helpers/*',
     'node_modules/swagger-ui/src/main/javascript/*',
-    'node_modules/swagger-ui/src/main/javascript/utils/*'
+    'node_modules/swagger-ui/src/main/javascript/utils/*',
+    'node_modules/swagger-ui/lib/highlight.7.3.pack.js'
   ])
     .pipe(replace(/window\.SwaggerUi\s+=/g, 'module.exports = SwaggerUi ='))
     .pipe(replace(/module\.exports\s+=\s+factory\(require\('b'\)\);/g, ''))
