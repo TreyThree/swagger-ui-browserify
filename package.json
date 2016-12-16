@@ -4,10 +4,10 @@
   "description": "Use swagger-ui with browserify",
   "repository": {
     "type": "git",
-    "url": "git://github.com/achingbrain/swagger-ui-browserify.git"
+    "url": "git://github.com/TreyThree/swagger-ui-browserify.git"
   },
   "bugs": {
-    "url": "https://github.com/achingbrain/swagger-ui-browserify/issues"
+    "url": "https://github.com/TreyThree/swagger-ui-browserify/issues"
   },
   "scripts": {
     "test": "gulp test-setup && cucumber.js test/features",
